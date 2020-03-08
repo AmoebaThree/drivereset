@@ -1,0 +1,9 @@
+[Unit]
+Description=Reset PiRoCon
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/pi/zoidberg-deploy/drivereset/drivereset.py
+
+[Install]
+WantedBy=default.target
